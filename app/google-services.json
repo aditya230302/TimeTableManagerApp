@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265405150963",
+    "project_id": "timetablemanagementsyste-c859b",
+    "storage_bucket": "timetablemanagementsyste-c859b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265405150963:android:392b499b0310a65610a986",
+        "android_client_info": {
+          "package_name": "com.example.swipetabexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265405150963-liluo5cnpjj1lofjgunelm7q39q48u20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfvG8hF2D1rIixlFrRw19Ot51qs6CsfCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265405150963-liluo5cnpjj1lofjgunelm7q39q48u20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

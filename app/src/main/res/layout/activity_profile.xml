@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activitymain"
+    tools:context="com.example.TimeTable.Profile"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="PROFILE"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="#F60303"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="Aditya Sharma 12015987"
+                        android:textColor="#1A237E"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/Aditya"
+                    android:layout_width="237dp"
+                    android:layout_height="176dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/aditya" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Utkarsh Dwivedi 12016006"
+                        android:textColor="#1A237E"
+                        android:textStyle="bold"
+                        android:fontFamily="casual"
+                        android:textSize="27dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/Utkarsh"
+                    android:layout_width="231dp"
+                    android:layout_height="161dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/utkarsh" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="2dp"
+            app:itemBackground="@android:color/white"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/selector_nav_item"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu"            />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

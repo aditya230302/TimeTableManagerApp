@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.TimeTable.NewTaskSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Subject"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/subject_dialog"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Teacher"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/teacher_dialog"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Room"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/room_dialog"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            android:inputType="textVisiblePassword"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorPrimary" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Day"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/day_dialog"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            android:inputType="textVisiblePassword"
+            android:singleLine="true"
+            android:textColor="?android:attr/textColorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="From"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/timePickerButton1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:text="Select Time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="To"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/timePickerButton2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:text="Select Time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
